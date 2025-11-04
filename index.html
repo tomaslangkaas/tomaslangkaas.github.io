@@ -5,87 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomas Formo Langkaas</title>
     <style>
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-
-html{
+html {
   padding: 0 1em;
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-body{
+body {
   margin: 0 auto;
   max-width: 70rem;
   min-width: 17rem;
 }
 
-main{
+main {
   display: flex;
   flex-direction: row;
 }
 
-section.profile{
+section.profile {
   flex-grow: 1;
   flex-basis: 35%;
   margin-top: 3rem;
   margin-right: 4rem;
 }
-section.content{
+section.content {
   flex-grow: 2;
   flex-basis: 65%;
 }
 
 @media (max-width: 60rem) {
-  main{
+  main {
     flex-direction: column;
   }
-  body{
+  body {
     max-width: 38rem;
   }
-  section.profile{
+  section.profile {
     margin-right: 0;
   }
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-h2{
+h2 {
   font-size: 1.4rem;
   line-height: 1.2em;
   font-weight: 500;
   margin: 3rem 0 2.4rem 0;
 }
 
-h3{
+h3 {
   font-size: 1.2rem;
   line-height: 1.2em;
   font-weight: 500;
   margin: 2.6rem 0 0.8rem 0;
 }
 
-p{
+p {
   margin: 0.8rem 0;
 }
 
-p.reference{
+p.reference {
   font-size: 0.8rem;
 }
 
-header{
+header {
   border-bottom: 1px solid #ddd;
   margin-bottom: 0rem;
   width: 100%;
 }
 
-div.t{
+div.t {
   line-height: 3.6rem;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -95,17 +96,23 @@ div.t{
   font-size: 1.2rem;
 }
 
-div.t span{
+div.t span {
   font-weight: 700;
 }
 
-svg.icon{
+svg.icon {
   width: 1.2rem;
   height: 1.2rem;
   position: relative;
   top: 0.3rem;
   margin-right: 0.2rem;
   margin-top: -0.3rem;
+}
+
+h3 svg.icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-top: -1rem;
 }
 
 a,
@@ -116,18 +123,21 @@ a:hover,
 a:active {
   color: black;
   text-decoration-thickness: 1px;
-  /*text-decoration-style: dotted;*/
 }
 
-.reference a{
+h3 a {
+  text-decoration: none;
+}
+
+.reference a {
   text-decoration-style: dotted;
 }
 
-div.some{
+div.some {
   margin: 1rem 0;
 }
 
-div.some span{
+div.some span {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -138,13 +148,13 @@ div.some span{
   width: 12rem;
 }
 
-div.box{
-  width:1rem;
-  height:1rem;
-  margin:0.2rem;
+div.box {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.2rem;
 }
 
-.profile img{
+.profile img {
   width: 5.6rem;
   height: 5.6rem;
   float: left;
@@ -153,14 +163,23 @@ div.box{
   margin: 0 1.5rem 1rem 0;
 }
 
-ul.nav{
+ul.nav {
   list-style: none; /* Removes bullet points or numbers */
-  margin: 2.5rem 0 0 0;        /* Removes default outer spacing */
-  padding: 0;       /* Removes default inner spacing (indentation) */
+  margin: 2.5rem 0 0 0; /* Removes default outer spacing */
+  padding: 0; /* Removes default inner spacing (indentation) */
 }
     </style>
 </head>
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="pdf-icon" viewBox="0 0 640 640">
+    <!-- Icon 1 path data -->
+
+    <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+    <path fill="red" d="M240 112L128 112C119.2 112 112 119.2 112 128L112 512C112 520.8 119.2 528 128 528L208 528L208 576L128 576C92.7 576 64 547.3 64 512L64 128C64 92.7 92.7 64 128 64L261.5 64C278.5 64 294.8 70.7 306.8 82.7L429.3 205.3C441.3 217.3 448 233.6 448 250.6L448 400.1L400 400.1L400 272.1L312 272.1C272.2 272.1 240 239.9 240 200.1L240 112.1zM380.1 224L288 131.9L288 200C288 213.3 298.7 224 312 224L380.1 224zM272 444L304 444C337.1 444 364 470.9 364 504C364 537.1 337.1 564 304 564L292 564L292 592C292 603 283 612 272 612C261 612 252 603 252 592L252 464C252 453 261 444 272 444zM304 524C315 524 324 515 324 504C324 493 315 484 304 484L292 484L292 524L304 524zM400 444L432 444C460.7 444 484 467.3 484 496L484 560C484 588.7 460.7 612 432 612L400 612C389 612 380 603 380 592L380 464C380 453 389 444 400 444zM432 572C438.6 572 444 566.6 444 560L444 496C444 489.4 438.6 484 432 484L420 484L420 572L432 572zM508 464C508 453 517 444 528 444L576 444C587 444 596 453 596 464C596 475 587 484 576 484L548 484L548 508L576 508C587 508 596 517 596 528C596 539 587 548 576 548L548 548L548 592C548 603 539 612 528 612C517 612 508 603 508 592L508 464z" />
+
+  </symbol>
+</svg>
   <header>
     <div class="t">Tomas Formo <span>Langkaas</span></div>
   </header>
@@ -168,7 +187,7 @@ ul.nav{
     <section class="profile">
       <img src="data:image/jpeg;base64,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" />
       <div class="description">
-        Hei! Jeg heter Tomas, er utdannet psykolog, og lar meg lett engasjere av faglige problemstillinger. På denne siden har jeg samlet en oversikt over tekster jeg har vært med på å skrive, både på <a href="#norsketekster">norsk</a> og på <a href="#publications">engelsk</a>. Her kan du finne en utradisjonell innføring i <a href="pdf/langkaas_mfl_2024_taushetsplikt.pdf">regler for taushetsplikt</a>, en oversikt over alle <a href="pdf/langkaas_mfl_2021_depresjonsvurdering_phq9.pdf">måter PHQ-9 kan anvendes på</a> i praksis, en <a href="pdf/langkaas_2020_virker_det.pdf">forklaring på hvorfor det er vanskelig å vurdere virkning</a> av behandling i praksis og en gjennomgang av <a href="pdf/hoffart_mfl_2013_emosjon_kognisjon.pdf">følelsers sentrale rolle i kognitiv terapi</a>. Følg meg gjerne på <a href="https://www.linkedin.com/in/tflangkaas/">LinkedIn</a> eller <a href="https://bsky.app/profile/tflangkaas.bsky.social">Bluesky</a>.
+        Hei! Jeg heter Tomas, er utdannet psykolog, og lar meg lett engasjere av faglige problemstillinger. På denne siden har jeg samlet en oversikt over tekster jeg har vært med på å skrive, både på <a href="#norsketekster">norsk</a> og på <a href="#publications">engelsk</a>. Her kan du blant annet finne en utradisjonell innføring i <a href="pdf/langkaas_mfl_2024_taushetsplikt.pdf">regler for taushetsplikt</a>, en oversikt over alle <a href="pdf/langkaas_mfl_2021_depresjonsvurdering_phq9.pdf">måter PHQ-9 kan anvendes på</a> i praksis, en forklaring på <a href="pdf/langkaas_2020_virker_det.pdf">hvorfor det er vanskelig å vurdere virkning av behandling</a> i praksis og en gjennomgang av <a href="pdf/hoffart_mfl_2013_emosjon_kognisjon.pdf">følelsers sentrale rolle i kognitiv terapi</a>. Følg meg gjerne på <a href="https://www.linkedin.com/in/tflangkaas/">LinkedIn</a> eller <a href="https://bsky.app/profile/tflangkaas.bsky.social">Bluesky</a>.
         <div class="some">
           <span class="some"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
               <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -201,43 +220,53 @@ ul.nav{
     </section>
     <section class="content">
       <h2 id="norsketekster">Faglige tekster på norsk</h2>
-      <h3>Taushetspliktens begrensninger (2024)</h3>
+      <h3><a href="pdf/langkaas_mfl_2024_taushetsplikt.pdf">Taushetspliktens begrensninger (2024) <svg class="icon">
+            <use xlink:href="#pdf-icon"></use>
+          </svg></a></h3>
       <p>En utradisjonell innføring i reglene for taushetsplikt. Kan leses som <a href="pdf/langkaas_mfl_2024_taushetsplikt.pdf">PDF</a> eller på <a href="https://psykologtidsskriftet.no/fagessay/2024/09/taushetspliktens-begrensninger">nett</a>.</p>
-      <p class="reference">Langkaas, T. F., Broch, E. H., Godtfredsen, M. B. &amp; Yang, L. X. (2024). Taushetspliktens begrensninger. <em>Tidsskrift for Norsk psykologforening, (61)</em>10, ss. 688–691. <a href="https://psykologtidsskriftet.no/fagessay/2024/09/taushetspliktens-begrensninger">https://psykologtidsskriftet.no/fagessay/2024/09/taushetspliktens-begrensninger</a> <a href="pdf/langkaas_mfl_2024_taushetsplikt.pdf"><span class="file-icon pdf">PDF</span></a></p>
+      <p class="reference">Langkaas, T. F., Broch, E. H., Godtfredsen, M. B. &amp; Yang, L. X. (2024). Taushetspliktens begrensninger. <em>Tidsskrift for Norsk psykologforening, (61)</em>10, ss. 688–691. <a href="https://psykologtidsskriftet.no/fagessay/2024/09/taushetspliktens-begrensninger">https://psykologtidsskriftet.no/fagessay/2024/09/taushetspliktens-begrensninger</a></p>
       <h3>Illusorisk kvalitetssikring (2024)</h3>
       <p>Kronikk om hvorfor og hvordan medsignering av spesialister er uegnet som kvalitetssikring av helsehjelp. Kan leses på <a href="https://psykologtidsskriftet.no/kronikk/2024/05/illusorisk-kvalitetssikring">nett</a>.</p>
       <p class="reference">Langkaas, T. F., &amp; Kolsrud, A. (2024). Illusorisk kvalitetssikring. <em>Tidsskrift for Norsk psykologforening, (61)</em>6, ss. 410–413. <a href="https://psykologtidsskriftet.no/kronikk/2024/05/illusorisk-kvalitetssikring">https://psykologtidsskriftet.no/kronikk/2024/05/illusorisk-kvalitetssikring</a></p>
       <h3>Det enkle er ofte det beste (2021)</h3>
       <p>Anmeldelse av den norske utgaven av behandlingsmanualen for «Prolonged exposure». Kan leses på <a href="https://psykologtidsskriftet.no/bokanmeldelse/2021/07/det-enkle-er-ofte-det-beste">nett</a>.</p>
       <p class="reference">Langkaas, T. F. (2021). Det enkle er ofte det beste. <em>Tidsskrift for Norsk psykologforening, (58)</em>7, ss. 626–627. <a href="https://psykologtidsskriftet.no/bokanmeldelse/2021/07/det-enkle-er-ofte-det-beste">https://psykologtidsskriftet.no/bokanmeldelse/2021/07/det-enkle-er-ofte-det-beste</a></p>
-      <h3>En innføring i depresjonsvurdering med PHQ–9 (2021)</h3>
+      <h3><a href="pdf/langkaas_mfl_2021_depresjonsvurdering_phq9.pdf">En innføring i depresjonsvurdering med PHQ–9 (2021) <svg class="icon">
+            <use xlink:href="#pdf-icon"></use>
+          </svg></a></h3>
       <p>Fagfellevurdert artikkel som gir en
-        oversikt over alle mulige måter spørreskjemaet PHQ–9 kan anvendes på i klinisk praksis. Kan leses som <a href="pdf/langkaas_mfl_2021_depresjonsvurdering_phq9.pdf">PDF</a> eller på <a href="https://psykologtidsskriftet.no/evidensbasert-praksis/2021/03/en-innforing-i-depresjonsvurdering-med-phq-9">nett</a>.</p>
-      <p class="reference">Langkaas, T. F., Rognan, E., &amp; Johnson, S. U. (2021). En innføring i depresjonsvurdering med PHQ–9. <em>Tidsskrift for Norsk psykologforening, (58)</em>3, ss. 176–187. <a href="https://psykologtidsskriftet.no/evidensbasert-praksis/2021/03/en-innforing-i-depresjonsvurdering-med-phq-9">https://psykologtidsskriftet.no/evidensbasert-praksis/2021/03/en-innforing-i-depresjonsvurdering-med-phq-9</a> <a href="pdf/langkaas_mfl_2021_depresjonsvurdering_phq9.pdf"><span class="file-icon pdf">PDF</span></a></a></p>
+        oversikt over alle mulige måter spørreskjemaet PHQ–9 kan anvendes på i klinisk praksis. Kan leses som <a href="pdf/langkaas_mfl_2021_depresjonsvurdering_phq9.pdf">PDF</a> eller på <a href="https://psykologtidsskriftet.no/evidensbasert-praksis/2021/03/en-innforing-i-depresjonsvurdering-med-phq-9">nett</a>. Preprint finnes på <a href="https://doi.org/10.31234/osf.io/8jwc7">PsyArXiv</a>.</p>
+      <p class="reference">Langkaas, T. F., Rognan, E., &amp; Johnson, S. U. (2021). En innføring i depresjonsvurdering med PHQ–9. <em>Tidsskrift for Norsk psykologforening, (58)</em>3, ss. 176–187. <a href="https://psykologtidsskriftet.no/evidensbasert-praksis/2021/03/en-innforing-i-depresjonsvurdering-med-phq-9">https://psykologtidsskriftet.no/evidensbasert-praksis/2021/03/en-innforing-i-depresjonsvurdering-med-phq-9</a></p>
       <h3>Endring er feil fokus for tilbakemelding (2020)</h3>
-      <p>Tilsvar til et debattinnlegg fra <a href="https://www.psykologtidsskriftet.no/artikkel/2020as09ae-Psykologen-trenger-hjelp">Rognstad m.fl. (2020)</a> etter essayet <a href="pdf/langkaas_2020_virker_det.pdf">«Virker det nå?» (Langkaas, 2020)</a>. Rognstad m.fl. argumenterer for at tilbakemeldingssystemer ikke er basert på noen implisitt antakelse om årsak og virkning. Jeg argumenterer for det motsatte. Tilsvaret kan leses på <a href="https://psykologtidsskriftet.no/debatt/2020/11/endring-er-feil-fokus-tilbakemelding">nett</a>.</p>
+      <p>Tilsvar til et debattinnlegg fra <a href="https://www.psykologtidsskriftet.no/artikkel/2020as09ae-Psykologen-trenger-hjelp">Rognstad m.fl. (2020)</a> etter essayet <a href="pdf/langkaas_2020_virker_det.pdf">«Virker det nå?» (Langkaas, 2020)</a>. Rognstad m.fl. argumenterer for at tilbakemeldingssystemer ikke er ment å si noe om hvordan behandling virker. Jeg argumenterer for det motsatte. Tilsvaret kan leses på <a href="https://psykologtidsskriftet.no/debatt/2020/11/endring-er-feil-fokus-tilbakemelding">nett</a>.</p>
       <p class="reference">Langkaas, T. F. (2020). Endring er feil fokus for tilbakemelding. <em>Tidsskrift for Norsk psykologforening, (57)</em>11, ss. 844–845. <a href="https://psykologtidsskriftet.no/debatt/2020/11/endring-er-feil-fokus-tilbakemelding">https://psykologtidsskriftet.no/debatt/2020/11/endring-er-feil-fokus-tilbakemelding</a></p>
-      <h3>Virker det nå? (2020)</h3>
+      <h3><a href="pdf/langkaas_2020_virker_det.pdf">Virker det nå? (2020) <svg class="icon">
+            <use xlink:href="#pdf-icon"></use>
+          </svg></a></h3>
       <p>Fagessay om hvorfor det er vanskelig å vurdere virkning av behandling i vanlig praksis. Kan leses som <a href="pdf/langkaas_2020_virker_det.pdf">PDF</a> eller på <a href="https://psykologtidsskriftet.no/fagessay/2020/09/virker-det-na">nett</a>.</p>
-      <p class="reference">Langkaas, T. F. (2020). Virker det nå? <em>Tidsskrift for Norsk psykologforening, (57)</em>9, ss. 666–672. <a href="https://psykologtidsskriftet.no/fagessay/2020/09/virker-det-na">https://psykologtidsskriftet.no/fagessay/2020/09/virker-det-na</a> <a href="pdf/langkaas_2020_virker_det.pdf"><span class="file-icon pdf">PDF</span></a></p>
+      <p class="reference">Langkaas, T. F. (2020). Virker det nå? <em>Tidsskrift for Norsk psykologforening, (57)</em>9, ss. 666–672. <a href="https://psykologtidsskriftet.no/fagessay/2020/09/virker-det-na">https://psykologtidsskriftet.no/fagessay/2020/09/virker-det-na</a></p>
       <h3>Lettbeint om skadevirkninger (2019)</h3>
       <p>Anmeldelse av boken «Skadelige samtaler». Kan leses på <a href="https://psykologtidsskriftet.no/bokanmeldelse/2019/12/lettbeint-om-skadevirkninger">nett</a>.</p>
       <p class="reference">Langkaas, T. F. (2019). Lettbeint om skadevirkninger. <em>Tidsskrift for Norsk psykologforening, (56)</em>12, ss. 959–960. <a href="https://psykologtidsskriftet.no/bokanmeldelse/2019/12/lettbeint-om-skadevirkninger">https://psykologtidsskriftet.no/bokanmeldelse/2019/12/lettbeint-om-skadevirkninger</a></p>
-      <h3>Klinisk signifikans i praksis (2017)</h3>
+      <h3><a href="pdf/langkaas_mfl_2017_klinisk_signifikans.pdf">Klinisk signifikans i praksis (2017) <svg class="icon">
+            <use xlink:href="#pdf-icon"></use>
+          </svg></a></h3>
       <p>Fagfellevurdert artikkel om hvordan klinisk signifikans (<a href="https://doi.org/10.1037/0022-006X.59.1.12">Jacobson &amp; Truax, 1991</a>), en statistisk metode for å vurdere endring, kan anvendes i vanlig praksis. For denne artikkelen ble vi tildelt Bjørn Christiansens minnepris. Kan leses som <a href="pdf/langkaas_mfl_2017_klinisk_signifikans.pdf">PDF</a> eller på <a href="https://psykologtidsskriftet.no/vitenskapelig-artikkel/2017/12/klinisk-signifikans-i-praksis">nett</a>.</p>
-      <p class="reference">Langkaas, T. F., Johnson, S. U., Stenshorne, K., Collin-Tiller, C., &amp; Vrabel, K. R. (2017). Klinisk signifikans i praksis. <em>Tidsskrift for Norsk psykologforening, (54)</em>12, ss. 1160–1167. <a href="https://psykologtidsskriftet.no/vitenskapelig-artikkel/2017/12/klinisk-signifikans-i-praksis">https://psykologtidsskriftet.no/vitenskapelig-artikkel/2017/12/klinisk-signifikans-i-praksis</a> <a href="pdf/langkaas_mfl_2017_klinisk_signifikans.pdf"><span class="file-icon pdf">PDF</span></a></p>
-      <h3>Emosjon og kognisjon i kognitiv terapi (2013)</h3>
+      <p class="reference">Langkaas, T. F., Johnson, S. U., Stenshorne, K., Collin-Tiller, C., &amp; Vrabel, K. R. (2017). Klinisk signifikans i praksis. <em>Tidsskrift for Norsk psykologforening, (54)</em>12, ss. 1160–1167. <a href="https://psykologtidsskriftet.no/vitenskapelig-artikkel/2017/12/klinisk-signifikans-i-praksis">https://psykologtidsskriftet.no/vitenskapelig-artikkel/2017/12/klinisk-signifikans-i-praksis</a></p>
+      <h3><a href="pdf/hoffart_mfl_2013_emosjon_kognisjon.pdf">Emosjon og kognisjon i kognitiv terapi (2013) <svg class="icon">
+            <use xlink:href="#pdf-icon"></use>
+          </svg></a></h3>
       <p>Fagfellevurdert artikkel om følelsers sentrale rolle i kognitiv terapi. Kan leses som <a href="pdf/hoffart_mfl_2013_emosjon_kognisjon.pdf">PDF</a> eller på <a href="https://www.psykologtidsskriftet.no/artikkel/2013as08ae-Emosjon-og-kognisjon-i-kognitiv-terapi">nett</a>.</p>
-      <p class="reference">Hoffart, A., &amp; Langkaas, T. F. (2013). Emosjon og kognisjon i kognitiv terapi. <em>Tidsskrift for Norsk psykologforening, 50</em>(8), 752–758. <a href="https://www.psykologtidsskriftet.no/artikkel/2013as08ae-Emosjon-og-kognisjon-i-kognitiv-terapi">https://www.psykologtidsskriftet.no/artikkel/2013as08ae-Emosjon-og-kognisjon-i-kognitiv-terapi</a> <a href="pdf/hoffart_mfl_2013_emosjon_kognisjon.pdf"><span class="file-icon pdf">PDF</span></a></p>
+      <p class="reference">Hoffart, A., &amp; Langkaas, T. F. (2013). Emosjon og kognisjon i kognitiv terapi. <em>Tidsskrift for Norsk psykologforening, 50</em>(8), 752–758. <a href="https://www.psykologtidsskriftet.no/artikkel/2013as08ae-Emosjon-og-kognisjon-i-kognitiv-terapi">https://www.psykologtidsskriftet.no/artikkel/2013as08ae-Emosjon-og-kognisjon-i-kognitiv-terapi</a></p>
       <h3>Hvordan sikre angstpasienter kunnskapsbasert behandling? (2013)</h3>
       <p>Bokkapittel om hvilken rolle spesifikke faktorer har i behandling av angstlidelser.</p>
       <p class="reference">Hoffart, A., Johnson, S. U., Langkaas, T. F., Hedley, L. M., &amp; Hvidsten, M., Rasmussen, A. (2013). Betydningen av spesifikke faktorer i behandling av angstlidelser. I Kvale, G., Havik, O. E., &amp; Heiervang, E. R. (Red.). <em>Hvordan sikre angstpasienter kunnskapsbasert behandling?</em> Oslo: Universitetsforlaget.</p>
       <h3>Å forene motsetninger er psykologiens styrke (2009)</h3>
       <p>Innlegg i debatten som oppsto i etterkant av teksten <a href="https://www.psykologtidsskriftet.no/artikkel/2009as02ae-7-logner-om-psykoterapi">«Syv løgner om psykoterapi» (Oddli &amp; Kjøs, 2009)</a>.</p>
       <p class="reference">McCullough, L., Hjeltnes, A., Ulvenes, P., Langkaas, T. F., &amp; Hoffart, A. (2009). Å forene motsetninger er psykologiens styrke. <em>Tidsskrift for Norsk psykologforening, 46</em>(5), 496–499. <a href="https://www.psykologtidsskriftet.no/artikkel/2009as05ae-A-forene-motsetninger-er-psykologiens-styrke">https://www.psykologtidsskriftet.no/artikkel/2009as05ae-A-forene-motsetninger-er-psykologiens-styrke</a></p>
-      <h3>Ambivalens - hemmende eller fremmende i terapi? En teoretisk undersøkelse av ambivalensbegrepet i motiverende intervju (2003)</h3>
+      <h3>Ambivalens &ndash; hemmende eller fremmende i terapi? En teoretisk undersøkelse av ambivalensbegrepet i motiverende intervju (2003)</h3>
       <p>Masteroppgave som viser hvordan ambivalens er et flertydig begrep i motiverende intervju. Kan leses på <a href="https://hdl.handle.net/1956/1538">nett</a>.</p>
-      <p class="reference">Langkaas, T. F. (2003). <em>Ambivalens - hemmende eller fremmende i terapi? En teoretisk undersøkelse av ambivalensbegrepet i motiverende intervju</em> [Masteroppgave, Psykologisk fakultet, Universitetet i Bergen]. <a href="https://hdl.handle.net/1956/1538">https://hdl.handle.net/1956/1538</a></p>
+      <p class="reference">Langkaas, T. F. (2003). <em>Ambivalens &ndash; hemmende eller fremmende i terapi? En teoretisk undersøkelse av ambivalensbegrepet i motiverende intervju</em> [Masteroppgave, Psykologisk fakultet, Universitetet i Bergen]. <a href="https://hdl.handle.net/1956/1538">https://hdl.handle.net/1956/1538</a></p>
 
       <div lang="en">
         <h2 id="publications">Scientific publications in English</h2>
